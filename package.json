@@ -1,0 +1,12 @@
+{
+  "name": "circleci-sandbox-public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Run tests\"",
+    "build": "echo \"Run build\""
+  },
+  "author": "",
+  "license": "ISC"
+}
