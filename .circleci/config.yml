@@ -4,9 +4,8 @@ orbs:
   node: circleci/node@6.1.0
 jobs:
   test:
-    executor: 
-      name: node/default
-      tag: '18'
+    docker:
+      - image: cimage/node:18
     steps:
       - checkout
       - node/install-packages:
