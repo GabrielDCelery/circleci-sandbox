@@ -5,7 +5,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimage/node:18
+      - image: cimg/node:18
     steps:
       - checkout
       - node/install-packages:
