@@ -13,6 +13,13 @@ jobs:
       - run:
           command: npm run test
           name: Run tests
+  build:
+    docker:
+      - image: cimg/node:20.18.0
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
       - run:
           command: npm run build
           name: Run build
@@ -20,3 +27,6 @@ workflows:
   test-my-app:
     jobs:
       - test
+  build-my-app:
+    jobs:
+      - build
